@@ -1,7 +1,9 @@
 var fs = require('fs');
 var gm = require('gm').subClass({imageMagick: true});
-var path = 'lucid-1.9-beta/assets/minecraft/textures/blocks/'
+var path = 'import/default/assets/minecraft/textures/blocks/'
 var blockSprites = require('./block-sprites')
+
+// ----------------- Create Directory Layout ----------------- //
 
 var layout = [
   '/export',
@@ -27,21 +29,30 @@ function makeLayout(folder) {
 }
 
 
+// ----------------- Create Terrain Spritesheet ----------------- //
 
-// spritesheet = gm(undefined);
+spritesheet = gm(undefined);
 
-// blockSprites.forEach((sprite) => {
-//   spritesheet.montage(path + sprite);
-// })
+blockSprites.forEach((sprite) => {
+  spritesheet.montage(path + sprite);
+})
 
-// spritesheet
-//   .geometry('16x16+0+0').tile('16x16')
-//   .write('export/terrain.png', (err) => {if (!err) {console.log('written terrain')} })
+spritesheet
+  .geometry('16x16+0+0').tile('16x25')
+  .write('export/terrain.png', (err) => {
+    if (!err) {console.log('written terrain')} 
+    else {console.log(err);}
+  })
   
-// spritesheet
-//   .geometry('8x8+0+0').tile('16x16')
-//   .write('export/terrainMipMapLevel2.png', (err) => {if (!err) {console.log('written terrainMipMapLevel2')} })
+spritesheet
+  .geometry('8x8+0+0').tile('16x25')
+  .write('export/terrainMipMapLevel2.png', (err) => {
+    if (!err) {console.log('written terrainMipMapLevel2')} 
+  })
 
-// spritesheet
-//   .geometry('4x4+0+0').tile('16x16')
-//   .write('export/terrainMipMapLevel3.png', (err) => {if (!err) {console.log('written terrainMipMapLevel3')} })
+spritesheet
+  .geometry('4x4+0+0').tile('16x25')
+  .write('export/terrainMipMapLevel3.png', (err) => {
+    if (!err) {console.log('written terrainMipMapLevel3')} 
+  })
+
