@@ -50,8 +50,8 @@ function findPNG(shortDirectory) {
   return importDirectory.then(dir => {
     let userDir = __dirname + '/import/' + dir + '/assets/minecraft/textures/' + shortDirectory;
     let defaultDir = __dirname + '/import/default/assets/minecraft/textures/' + shortDirectory;
-    // if (fs.existsSync(userDir)) {
-    if (false) {
+    // if (false) {
+    if (fs.existsSync(userDir)) {
       return userDir;
     } else if (fs.existsSync(defaultDir)) {
       return defaultDir;
@@ -60,37 +60,68 @@ function findPNG(shortDirectory) {
       return __dirname + '/import/default/404.png';
     }
   })
-
 }
 
+
+function saveSheet(spritesheet, filename) {
+  console.log('ran saver function');
+  spritesheet
+    .geometry('16x16+0+0').tile('16x32')
+    .write(filename, (err) => {
+      if (!err) {console.log('written', filename)} 
+      else {console.log(err);}
+    })
+
+  if (filename == 'export/terrain.png') {
+    // Only terrain.png has MipMapLevels
+    spritesheet
+      .geometry('8x8+0+0').tile('16x32')
+      .write('export/terrainMipMapLevel2.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel2')} 
+      })
+
+    spritesheet
+      .geometry('4x4+0+0').tile('16x32')
+      .write('export/terrainMipMapLevel3.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel3')} 
+      })  
+  }
+}
+
+
+// console.log( await findPNG('blocks/gravel.png') );
 // findPNG('blocks/gravel.png').then(i=>console.log(i))
 
 // ----------------- Create Terrain Spritesheet ----------------- //
 
+function montageEach(spritesheet, sprites) {
+  // Recursive function to allow successive Promises to resolve in sequence
+  let counter = 0;
+  let apply = function(spritesheet, sprites) {
+    findPNG('blocks/' + sprites[counter]).then(dir => {
+      spritesheet.montage(dir);
+      if (counter < sprites.length-1) {
+        counter += 1;
+        apply(spritesheet, sprites);
+      } else {
+        saveSheet(spritesheet, 'export/terrain.png');
+      }
+    });
+  }
+  apply(spritesheet, sprites);
+}
+
 spritesheet = gm(256,512).background('transparent');
+montageEach(spritesheet, blockSprites)
 
-blockSprites.forEach((sprite) => {
-  // console.log('here:','blocks/' + sprite);
-  // spritesheet.montage(dir)
-  // findPNG('blocks/' + sprite).then(dir => )
-})
 
-spritesheet
-  .geometry('16x16+0+0').tile('16x32')
-  .write('export/terrain.png', (err) => {
-    if (!err) {console.log('written terrain')} 
-    else {console.log(err);}
-  })
-  
-// spritesheet
-//   .geometry('8x8+0+0').tile('16x32')
-//   .write('export/terrainMipMapLevel2.png', (err) => {
-//     if (!err) {console.log('written terrainMipMapLevel2')} 
-//   })
 
-// spritesheet
-//   .geometry('4x4+0+0').tile('16x32')
-//   .write('export/terrainMipMapLevel3.png', (err) => {
-//     if (!err) {console.log('written terrainMipMapLevel3')} 
-//   })
 
+
+
+
+
+
+// blockSprites.forEach((sprite) => {
+//   findPNG('blocks/' + sprite).then(dir => spritesheet.montage(dir))
+// })
