@@ -1,0 +1,15 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "nether_brick_double_slab", "weight": 50 },
+            { "model": "nether_brick_double_slab1", "weight": 25 },
+            { "model": "nether_brick_double_slab2", "weight": 25 }
+        ],
+        "all": [
+            { "model": "nether_brick_double_slab", "weight": 50 },
+            { "model": "nether_brick_double_slab1", "weight": 25 },
+            { "model": "nether_brick_double_slab2", "weight": 25 }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "snowy=false": [
+            { "model": "grass_normal", "weight": 60 },
+            { "model": "grass_normal", "weight": 60, "y": 90 },
+            { "model": "grass_normal", "weight": 60, "y": 180 },
+            { "model": "grass_normal", "weight": 60, "y": 270 },
+            { "model": "grass_normal1", "weight": 5 },
+            { "model": "grass_normal1", "weight": 5, "y": 90 },
+            { "model": "grass_normal1", "weight": 5, "y": 180 },
+            { "model": "grass_normal1", "weight": 5, "y": 270 },
+            { "model": "grass_normal2", "weight": 10 },
+            { "model": "grass_normal2", "weight": 10, "y": 90 },
+            { "model": "grass_normal2", "weight": 10, "y": 180 },
+            { "model": "grass_normal2", "weight": 10, "y": 270 },
+            { "model": "grass_normal3", "weight": 15 },
+            { "model": "grass_normal3", "weight": 15, "y": 90 },
+            { "model": "grass_normal3", "weight": 15, "y": 180 },
+            { "model": "grass_normal3", "weight": 15, "y": 270 },
+            { "model": "grass_normal4", "weight": 10 },
+            { "model": "grass_normal4", "weight": 10, "y": 90 },
+            { "model": "grass_normal4", "weight": 10, "y": 180 },
+            { "model": "grass_normal4", "weight": 10, "y": 270 }
+        ],
+        "snowy=true":  { "model": "grass_snowed" }
+    }
+}

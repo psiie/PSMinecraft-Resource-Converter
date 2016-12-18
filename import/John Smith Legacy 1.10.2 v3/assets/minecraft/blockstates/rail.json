@@ -1,0 +1,15 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "variants": {
+        "shape=north_south": { "model": "rail_flat" },
+        "shape=east_west": { "model": "rail_flat", "y": 90 },
+        "shape=ascending_east": { "model": "rail_raised", "y": 270 },
+        "shape=ascending_west": { "model": "rail_raised", "y": 90 },
+        "shape=ascending_north": { "model": "rail_raised", "y": 180 },
+        "shape=ascending_south": { "model": "rail_raised" },
+        "shape=south_east": { "model": "rail_curved", "y": 180 },
+        "shape=south_west": { "model": "rail_curved", "y": 270 },
+        "shape=north_west": { "model": "rail_curved" },
+        "shape=north_east": { "model": "rail_curved", "y": 90 }
+    }
+}

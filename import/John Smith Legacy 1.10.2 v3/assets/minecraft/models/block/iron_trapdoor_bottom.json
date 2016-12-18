@@ -1,0 +1,8 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "parent": "block/trapdoor_bottom",
+    "textures": {
+        "texture": "blocks/iron_trapdoor",
+        "edge": "blocks/iron_trapdoor_edge"
+    }
+}

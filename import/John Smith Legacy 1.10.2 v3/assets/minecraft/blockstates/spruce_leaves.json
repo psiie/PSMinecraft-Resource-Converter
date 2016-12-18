@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "spruce_leaves" },
+            { "model": "spruce_leaves1" },
+            { "model": "spruce_leaves2" },
+            { "model": "spruce_leaves3" }
+        ]
+    }
+}

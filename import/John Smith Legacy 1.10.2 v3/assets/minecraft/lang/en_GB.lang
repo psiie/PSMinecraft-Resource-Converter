@@ -1,0 +1,57 @@
+
+language.name=English
+language.region=UK
+language.code=en_UK
+
+resourcePack.available.title=§r§nAvailable Resource Packs§r
+resourcePack.selected.title=§r§nSelected Resource Packs§r
+
+container.inventory=§7Inventory§r
+container.hopper=§7Item Hopper§r
+container.crafting=§7Crafting§r
+container.dispenser=§7Dispenser§r
+container.dropper=§7Dropper§r
+container.furnace=§7Furnace§r
+container.enchant=§7Enchant§r
+container.enchant.lapis.one=§71 Lapis Lazuli§r
+container.enchant.lapis.many=§7%d Lapis Lazuli§r
+container.enchant.level.one=§71 Enchantment Level§r
+container.enchant.level.many=§7%d Enchantment Levels§r
+container.enchant.clue=§7%s . . . ?§r
+container.repair=§7Repair & Name§r
+container.repair.cost=§7Enchantment Cost: %1$d§r
+container.repair.expensive=§7Too Expensive!§r
+container.creative=§7Item Selection§r
+container.brewing=§7Brewing Stand§r
+container.chest=§7Chest§r
+container.chestDouble=§7Large Chest§r
+container.minecart=§7Minecart§r
+container.enderchest=§7Ender Chest§r
+container.beacon=§7Beacon§r
+container.minecart.hopper=§7Hopper minecart§r
+container.minecart.chest=§7Chest minecart§r
+
+itemGroup.buildingBlocks=§7Building Blocks§r
+itemGroup.decorations=§7Decoration Blocks§r
+itemGroup.redstone=§7Redstone§r
+itemGroup.transportation=§7Transportation§r
+itemGroup.misc=§7Miscellaneous§r
+itemGroup.search=§7Search Items§r
+itemGroup.food=§7Foodstuffs§r
+itemGroup.tools=§7Tools§r
+itemGroup.combat=§7Combat§r
+itemGroup.brewing=§7Brewing§r
+itemGroup.materials=§7Materials§r
+itemGroup.inventory=§7Survival Inventory§r
+
+entity.Villager.farmer=§7Farmer§r
+entity.Villager.fisherman=§7Fisherman§r
+entity.Villager.shepherd=§7Shepherd§r
+entity.Villager.fletcher=§7Fletcher§r
+entity.Villager.librarian=§7Librarian§r
+entity.Villager.cleric=§7Cleric§r
+entity.Villager.armor=§7Armorer§r
+entity.Villager.weapon=§7Weapon Smith§r
+entity.Villager.tool=§7Tool Smith§r
+entity.Villager.butcher=§7Butcher§r
+entity.Villager.leather=§7Leatherworker§r

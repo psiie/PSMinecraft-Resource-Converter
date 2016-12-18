@@ -1,0 +1,36 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "textures": {
+        "particle": "blocks/cake_side",
+        "bottom": "blocks/cake_bottom",
+        "top": "blocks/cake_top",
+        "cherry": "blocks/cake_top_cherries",
+        "side": "blocks/cake_side",
+        "inside": "blocks/cake_inner"
+    },
+    "elements": [
+        {   "from": [ 13, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            },
+            "__comment": "Cake"
+        },
+        {   "from": [ 13, 8, 11.5 ],
+            "to": [ 13.5, 8.5, 13 ],
+            "faces": {
+                "up":    { "uv": [ 4.5, 3, 5, 4.5 ], "texture": "#cherry" },
+                "north": { "uv": [ 4.5, 3, 5, 3.5 ], "texture": "#cherry", "rotation": 180 },
+                "south": { "uv": [ 4.5, 4, 5, 4.5 ], "texture": "#cherry" },
+                "west":  { "uv": [ 4.5, 3, 5, 4.5 ], "texture": "#cherry", "rotation": 270 },
+                "east":  { "uv": [ 4.5, 3, 5, 4.5 ], "texture": "#cherry", "rotation": 90 }
+            },
+            "__comment": "Cherry 5-1"
+        }
+    ]
+}

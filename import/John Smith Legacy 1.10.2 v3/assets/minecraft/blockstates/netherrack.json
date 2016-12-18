@@ -1,0 +1,14 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "netherrack", "weight": 30 },
+            { "model": "netherrack1", "weight": 10 },
+            { "model": "netherrack2", "weight": 20 },
+            { "model": "netherrack3", "weight": 10 },
+            { "model": "netherrack4", "weight": 20 },
+            { "model": "netherrack5", "weight": 5 },
+            { "model": "netherrack6", "weight": 5 }
+        ]
+    }
+}

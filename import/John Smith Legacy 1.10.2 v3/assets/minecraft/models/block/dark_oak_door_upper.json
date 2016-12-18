@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "parent": "block/door_upper",
+    "textures": {
+        "lower": "blocks/door_dark_oak_lower",
+        "upper": "blocks/door_dark_oak_upper",
+        "edge": "blocks/door_dark_oak_edge"
+    }
+}

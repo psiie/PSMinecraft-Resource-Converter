@@ -1,0 +1,8 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/cross",
+    "textures": {
+        "particle": "blocks/flower_allium",
+        "cross": "blocks/flower_allium"
+    }
+}

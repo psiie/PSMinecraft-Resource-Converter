@@ -1,0 +1,25 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "half=bottom": [
+            { "model": "half_slab_stone_brick", "weight": 40 },
+            { "model": "half_slab_stone_brick1", "weight": 5 },
+            { "model": "half_slab_stone_brick2", "weight": 5 },
+            { "model": "half_slab_stone_brick3", "weight": 10 },
+            { "model": "half_slab_stone_brick4", "weight": 10 },
+            { "model": "half_slab_stone_brick5", "weight": 10 },
+            { "model": "half_slab_stone_brick6", "weight": 10 },
+            { "model": "half_slab_stone_brick7", "weight": 10 }
+        ],
+        "half=top": [
+            { "model": "upper_slab_stone_brick", "weight": 40 },
+            { "model": "upper_slab_stone_brick1", "weight": 5 },
+            { "model": "upper_slab_stone_brick2", "weight": 5 },
+            { "model": "upper_slab_stone_brick3", "weight": 10 },
+            { "model": "upper_slab_stone_brick4", "weight": 10 },
+            { "model": "upper_slab_stone_brick5", "weight": 10 },
+            { "model": "upper_slab_stone_brick6", "weight": 10 },
+            { "model": "upper_slab_stone_brick7", "weight": 10 }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/orientable",
+    "textures": {
+        "top": "blocks/furnace_top",
+        "bottom": "blocks/furnace_bottom",
+        "front": "blocks/furnace_front_on",
+        "side": "blocks/furnace_side"
+    }
+}

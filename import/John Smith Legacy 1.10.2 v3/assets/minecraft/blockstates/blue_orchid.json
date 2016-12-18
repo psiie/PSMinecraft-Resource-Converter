@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "orchid" },
+            { "model": "orchid1" },
+            { "model": "orchid2" },
+            { "model": "orchid3" }
+        ]
+    }
+}

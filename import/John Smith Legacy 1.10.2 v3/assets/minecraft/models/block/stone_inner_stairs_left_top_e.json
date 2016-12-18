@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "blocks/stone_stairs_bottom1",
+        "top": "blocks/stone_stairs_inner_left_top_e",
+        "side": "blocks/stone_stairs_top_side"
+    }
+}

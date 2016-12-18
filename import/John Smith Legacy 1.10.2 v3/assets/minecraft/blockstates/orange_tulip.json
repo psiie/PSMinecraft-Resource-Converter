@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "orange_tulip" },
+            { "model": "orange_tulip1" },
+            { "model": "orange_tulip2" },
+            { "model": "orange_tulip3" }
+        ]
+    }
+}

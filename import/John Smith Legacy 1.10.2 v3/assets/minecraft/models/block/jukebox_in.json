@@ -1,0 +1,13 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/cube",
+    "textures": {
+        "particle": "blocks/jukebox_top",
+        "down": "blocks/jukebox_bottom",
+        "up": "blocks/jukebox_top_in",
+        "north": "blocks/jukebox_side",
+        "east": "blocks/jukebox_side",
+        "south": "blocks/jukebox_side",
+        "west": "blocks/jukebox_side"
+    }
+}

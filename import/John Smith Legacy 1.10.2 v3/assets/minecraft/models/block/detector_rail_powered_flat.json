@@ -1,0 +1,224 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/rail_detector_particle",
+        "rails": "blocks/rail_rails",
+        "sleepers": "blocks/rail_sleepers",
+        "detector": "blocks/rail_detector_powered"
+    },
+    "elements": [
+        {   "from": [ 2, 1, 0 ],
+            "to": [ 4.5, 1.5, 16 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 6.5, 0, 9,   16 ], "texture": "#rails" },
+                "up":    { "uv": [ 2,   0, 4.5, 16 ], "texture": "#rails" },
+                "north": { "uv": [ 0.5, 0, 1,    2.5 ], "texture": "#rails", "rotation": 90 },
+                "south": { "uv": [ 0.5, 0, 1,    2.5 ], "texture": "#rails", "rotation": 90 },
+                "west":  { "uv": [ 1,   0, 1.5, 16 ], "texture": "#rails", "rotation": 270 },
+                "east":  { "uv": [ 1,   0, 1.5, 16 ], "texture": "#rails", "rotation": 90 }
+            },
+            "__comment": "Left Rail"
+        },
+        {   "from": [ 2.5, 1.5, 0 ],
+            "to": [ 4, 2, 16 ],
+            "shade": false,
+            "faces": {
+                "up":    { "uv": [ 2.5, 0, 4,   16 ], "texture": "#rails" },
+                "north": { "uv": [ 0,   0, 0.5,  1.5 ], "texture": "#rails", "rotation": 90 },
+                "south": { "uv": [ 0,   0, 0.5,  1.5 ], "texture": "#rails", "rotation": 90 },
+                "west":  { "uv": [ 2.5, 0, 3,   16 ], "texture": "#rails", "rotation": 270 },
+                "east":  { "uv": [ 3.5, 0, 4,   16 ], "texture": "#rails", "rotation": 90 }
+            },
+            "__comment": "Left Rail Top"
+        },
+        {   "from": [ 11.5, 1, 0 ],
+            "to": [ 14, 1.5, 16 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [  6.5, 0,  9,   16 ], "texture": "#rails" },
+                "up":    { "uv": [ 11.5, 0, 14,   16 ], "texture": "#rails" },
+                "north": { "uv": [  0.5, 0,  1,    2.5 ], "texture": "#rails", "rotation": 90 },
+                "south": { "uv": [  0.5, 0,  1,    2.5 ], "texture": "#rails", "rotation": 90 },
+                "west":  { "uv": [  1,   0,  1.5, 16 ], "texture": "#rails", "rotation": 270 },
+                "east":  { "uv": [  1,   0,  1.5, 16 ], "texture": "#rails", "rotation": 90 }
+            },
+            "__comment": "Right Rail"
+        },
+        {   "from": [ 12, 1.5, 0 ],
+            "to": [ 13.5, 2, 16 ],
+            "shade": false,
+            "faces": {
+                "up":    { "uv": [ 12, 0, 13.5, 16 ], "texture": "#rails" },
+                "north": { "uv": [  0, 0,  0.5,  1.5 ], "texture": "#rails", "rotation": 90 },
+                "south": { "uv": [  0, 0,  0.5,  1.5 ], "texture": "#rails", "rotation": 90 },
+                "west":  { "uv": [ 12, 0, 12.5, 16 ], "texture": "#rails", "rotation": 270 },
+                "east":  { "uv": [ 13, 0, 13.5, 16 ], "texture": "#rails", "rotation": 90 }
+            },
+            "__comment": "Right Rail Top"
+        },
+        {   "from": [  1, 0, 0.5 ],
+            "to":   [ 15, 1, 3 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [  1, 0.5, 15, 3 ], "texture": "#sleepers" },
+                "up":    { "uv": [  1, 0.5, 15, 3 ], "texture": "#sleepers" },
+                "north": { "uv": [  1, 3,   15, 4  ], "texture": "#sleepers" },
+                "south": { "uv": [  1, 0,   15, 1 ], "texture": "#sleepers" },
+                "west":  { "uv": [  1, 0.5,  2, 3 ], "texture": "#sleepers", "rotation": 270 },
+                "east":  { "uv": [ 14, 0.5, 15, 3 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper 1"
+        },
+        {   "from": [ 0.5, 0, 1 ],
+            "to":   [ 1, 1, 2.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 0.5, 1, 1,   2.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 0.5, 1, 1,   2.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 0.5, 1, 1,   2 ], "texture": "#sleepers" },
+                "south": { "uv": [ 0.5, 1, 1,   2 ], "texture": "#sleepers" },
+                "west":  { "uv": [ 0.5, 1, 1.5, 2.5 ], "texture": "#sleepers", "rotation": 270 }
+            },
+            "__comment": "Sleeper Chunks 1-1"
+        },
+        {   "from": [ 15, 0, 1 ],
+            "to":   [ 15.5, 1, 2.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 15,   1, 15.5, 2.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 15,   1, 15.5, 2.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 15,   1, 15.2, 2 ], "texture": "#sleepers" },
+                "south": { "uv": [ 15,   1, 15.5, 2 ], "texture": "#sleepers" },
+                "east":  { "uv": [ 14.5, 1, 15.5, 2.5 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper Chunks 1-2"
+        },
+        {   "from": [  1, 0, 4.5 ],
+            "to":   [ 15, 1, 7 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [  1, 4.5, 15, 7 ], "texture": "#sleepers" },
+                "up":    { "uv": [  1, 4.5, 15, 7 ], "texture": "#sleepers" },
+                "north": { "uv": [  1, 7,   15, 8 ], "texture": "#sleepers" },
+                "south": { "uv": [  1, 4,   15, 5 ], "texture": "#sleepers" },
+                "west":  { "uv": [  1, 4.5,  2, 7 ], "texture": "#sleepers", "rotation": 270 },
+                "east":  { "uv": [ 14, 4.5, 15, 7 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper 2"
+        },
+        {   "from": [ 0.5, 0, 5 ],
+            "to":   [ 1, 1, 6.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 0.5, 5, 1,   6.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 0.5, 5, 1,   6.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 0.5, 5, 1,   6 ], "texture": "#sleepers" },
+                "south": { "uv": [ 0.5, 5, 1,   6 ], "texture": "#sleepers" },
+                "west":  { "uv": [ 0.5, 5, 1.5, 6.5 ], "texture": "#sleepers", "rotation": 270 }
+            },
+            "__comment": "Sleeper Chunks 2-1"
+        },
+        {   "from": [ 15, 0, 5 ],
+            "to":   [ 15.5, 1, 6.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 15,   5, 15.5, 6.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 15,   5, 15.5, 6.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 15,   5, 15.5, 6 ], "texture": "#sleepers" },
+                "south": { "uv": [ 15,   5, 15.5, 6 ], "texture": "#sleepers" },
+                "east":  { "uv": [ 14.5, 5, 15.5, 6.5 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper Chunks 2-2"
+        },
+        {   "from": [  1, 0, 8.5 ],
+            "to":   [ 15, 1, 11 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [  1,  8.5, 15, 11 ], "texture": "#sleepers" },
+                "up":    { "uv": [  1,  8.5, 15, 11 ], "texture": "#sleepers" },
+                "north": { "uv": [  1, 11,   15, 12 ], "texture": "#sleepers" },
+                "south": { "uv": [  1,  8,   15,  9 ], "texture": "#sleepers" },
+                "west":  { "uv": [  1,  8.5,  2, 11 ], "texture": "#sleepers", "rotation": 270 },
+                "east":  { "uv": [ 14,  8.5, 15, 11 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper 3"
+        },
+        {   "from": [ 0.5, 0, 9 ],
+            "to":   [ 1, 1, 10.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 0.5, 9, 1,   10.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 0.5, 9, 1,   10.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 0.5, 9, 1,   10 ], "texture": "#sleepers" },
+                "south": { "uv": [ 0.5, 9, 1,   10 ], "texture": "#sleepers" },
+                "west":  { "uv": [ 0.5, 9, 1.5, 10.5 ], "texture": "#sleepers", "rotation": 270 }
+            },
+            "__comment": "Sleeper Chunks 3-1"
+        },
+        {   "from": [ 15, 0, 9 ],
+            "to":   [ 15.5, 1, 10.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 15,   9, 15.5, 10.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 15,   9, 15.5, 10.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 15,   9, 15.5, 10 ], "texture": "#sleepers" },
+                "south": { "uv": [ 15,   9, 15.5, 10 ], "texture": "#sleepers" },
+                "east":  { "uv": [ 14.5, 9, 15.5, 10.5 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper Chunks 3-2"
+        },
+        {   "from": [  1, 0, 12.5 ],
+            "to":   [ 15, 1, 15 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [  1, 12.5, 15, 15 ], "texture": "#sleepers" },
+                "up":    { "uv": [  1, 12.5, 15, 15 ], "texture": "#sleepers" },
+                "north": { "uv": [  1, 15,   15, 16 ], "texture": "#sleepers" },
+                "south": { "uv": [  1, 12,   15, 13 ], "texture": "#sleepers" },
+                "west":  { "uv": [  1, 12.5,  2, 15 ], "texture": "#sleepers", "rotation": 270 },
+                "east":  { "uv": [ 14, 12.5, 15, 15 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper 4"
+        },
+        {   "from": [ 0.5, 0, 13 ],
+            "to":   [ 1, 1, 14.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 0.5, 13, 1,   14.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 0.5, 13, 1,   14.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 0.5, 13, 1,   14 ], "texture": "#sleepers" },
+                "south": { "uv": [ 0.5, 13, 1,   14 ], "texture": "#sleepers" },
+                "west":  { "uv": [ 0.5, 13, 1.5, 14.5 ], "texture": "#sleepers", "rotation": 270 }
+            },
+            "__comment": "Sleeper Chunks 4-1"
+        },
+        {   "from": [ 15, 0, 13 ],
+            "to":   [ 15.5, 1, 14.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 15,   13, 15.5, 14.5 ], "texture": "#sleepers" },
+                "up":    { "uv": [ 15,   13, 15.5, 14.5 ], "texture": "#sleepers" },
+                "north": { "uv": [ 15,   13, 15.5, 14 ], "texture": "#sleepers" },
+                "south": { "uv": [ 15,   13, 15.5, 14 ], "texture": "#sleepers" },
+                "east":  { "uv": [ 14.5, 13, 15.5, 14.5 ], "texture": "#sleepers", "rotation": 90 }
+            },
+            "__comment": "Sleeper Chunks 4-2"
+        },
+        {   "from": [ 4.5, 1, 3.5 ],
+            "to":   [ 11.5, 2, 12.5 ],
+            "shade": false,
+            "faces": {
+                "down":  { "uv": [ 7,   0, 14,  9 ], "texture": "#detector" },
+                "up":    { "uv": [ 0,   0,  7,  9 ], "texture": "#detector" },
+                "north": { "uv": [ 0,   9,  7, 10 ], "texture": "#detector" },
+                "south": { "uv": [ 0,  10,  7, 11 ], "texture": "#detector" },
+                "west":  { "uv": [ 14,  0, 15,  9 ], "texture": "#detector", "rotation": 270 },
+                "east":  { "uv": [ 15,  0, 16,  9 ], "texture": "#detector", "rotation": 90 }
+            },
+            "__comment": "Detector"
+        }
+    ]
+}
+

@@ -1,0 +1,17 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "brick", "weight": 50 },
+            { "model": "brick1", "weight": 15 },
+            { "model": "brick2", "weight": 15 },
+            { "model": "brick3", "weight": 20 }
+        ],
+        "all": [
+            { "model": "brick", "weight": 50 },
+            { "model": "brick1", "weight": 15 },
+            { "model": "brick2", "weight": 15 },
+            { "model": "brick3", "weight": 20 }
+        ]
+    }
+}

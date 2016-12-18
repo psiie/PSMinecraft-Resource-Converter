@@ -1,0 +1,20 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "#lower",
+        "edge": "#edge"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 3, 16, 16 ],
+            "faces": {
+                "down":  { "uv": [  6, 0,  9, 16 ], "texture": "#edge", "cullface": "down" },
+                "north": { "uv": [  0, 0,  3, 16 ], "texture": "#edge", "cullface": "north" },
+                "south": { "uv": [ 13, 0, 16, 16 ], "texture": "#edge", "cullface": "south" },
+                "west":  { "uv": [  0, 0, 16, 16 ], "texture": "#lower", "cullface": "west" },
+                "east":  { "uv": [ 16, 0,  0, 16 ], "texture": "#lower" }
+            }
+        }
+    ]
+}

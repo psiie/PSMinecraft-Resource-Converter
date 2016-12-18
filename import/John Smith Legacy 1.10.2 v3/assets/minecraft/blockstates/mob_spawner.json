@@ -1,0 +1,6 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": { "model": "mob_spawner_cage" }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "textures": {
+        "particle": "blocks/bed_feet_top",
+        "top": "blocks/bed_feet_top",
+        "bottom": "blocks/bed_feet_bottom",
+        "end": "blocks/bed_feet_end",
+        "side": "blocks/bed_feet_side"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 9, 16 ],
+            "faces": {
+                "up":    { "uv": [  0, 16, 16,  0 ], "texture": "#top", "rotation": 90 },
+                "north": { "uv": [  0,  7, 16, 16 ], "texture": "#end" },
+                "west":  { "uv": [  0,  7, 16, 16 ], "texture": "#side" },
+                "east":  { "uv": [ 16,  7,  0, 16 ], "texture": "#side" }
+            }
+        },
+        {   "from": [ 0, 1.5, 0 ],
+            "to": [ 16, 1.5, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom" }
+            }
+        },
+        {   "__comment": "Top left",
+            "from": [ 0, 0, 0 ],
+            "to": [ 3, 1.5, 3 ],
+            "faces": {
+                "down":  { "uv": [  0, 13,  3, 16 ], "texture": "#bottom" },
+                "north": { "uv": [ 13, 14.5, 16, 16 ], "texture": "#end" },
+                "south": { "uv": [ 16, 14.5, 13, 16 ], "texture": "#end" },
+                "east":  { "uv": [  3, 14.5,  0, 16 ], "texture": "#side" }
+            }
+        },
+        {   "__comment": "Top right",
+            "from": [ 13, 0, 0 ],
+            "to": [ 16, 1.5, 3 ],
+            "faces": {
+                "down":  { "uv": [ 13, 14, 16, 16 ], "texture": "#bottom" },
+                "north": { "uv": [  0, 14.5,  3, 16 ], "texture": "#end" },
+                "south": { "uv": [  3, 14.5,  0, 16 ], "texture": "#end" },
+                "west":  { "uv": [  0, 14.5,  3, 16 ], "texture": "#side" }
+            }
+        }
+    ]
+}

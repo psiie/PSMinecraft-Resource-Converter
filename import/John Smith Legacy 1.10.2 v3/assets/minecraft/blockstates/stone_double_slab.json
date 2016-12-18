@@ -1,0 +1,17 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "double_stone" },
+            { "model": "double_stone1" },
+            { "model": "double_stone2" },
+            { "model": "double_stone3" }
+        ],
+        "all": [
+            { "model": "double_stone_top" },
+            { "model": "double_stone_top1" },
+            { "model": "double_stone_top2" },
+            { "model": "double_stone_top3" }
+        ]
+    }
+}

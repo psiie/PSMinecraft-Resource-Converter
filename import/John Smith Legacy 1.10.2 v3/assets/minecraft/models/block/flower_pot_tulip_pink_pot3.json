@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/flower_pot_cross3",
+    "textures": {
+        "plant": "blocks/flower_tulip_pink_pot3"
+    }
+}

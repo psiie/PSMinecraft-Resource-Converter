@@ -1,0 +1,20 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/thin_block",
+    "textures": {
+        "particle": "#texture"
+    },
+    "elements": [
+        {   "from": [ 1, 0, 1 ],
+            "to": [ 15, 1, 15 ],
+            "faces": {
+                "down":  { "uv": [ 1,  1, 15, 15 ], "texture": "#texture", "cullface": "down" },
+                "up":    { "uv": [ 1,  1, 15, 15 ], "texture": "#texture" },
+                "north": { "uv": [ 15,  1,  1,  0 ], "texture": "#texture" },
+                "south": { "uv": [ 1,  15, 15, 16 ], "texture": "#texture" },
+                "west":  { "uv": [ 1,  15,  0,  1 ], "texture": "#texture", "rotation":  90},
+                "east":  { "uv": [ 16, 15, 15,  1 ], "texture": "#texture", "rotation": 270}
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "blocks/bookshelf_end",
+        "side": "blocks/bookshelf"
+    }
+}

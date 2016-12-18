@@ -1,0 +1,10 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "parent": "block/piston_head_short",
+    "textures": {
+        "unsticky": "blocks/piston_top_bottom",
+        "side": "blocks/piston_side",
+        "platform": "blocks/piston_top_normal",
+        "shaft": "blocks/piston_shaft"
+    }
+}

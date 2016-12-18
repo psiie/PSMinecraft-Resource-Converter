@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "variants": {
+        "normal": [
+            { "model": "dead_bush" },
+            { "model": "dead_bush1" }
+        ]
+    }
+}

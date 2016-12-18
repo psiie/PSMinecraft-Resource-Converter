@@ -1,0 +1,21 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "tall_grass" },
+            { "model": "tall_grass1" },
+            { "model": "tall_grass2" },
+            { "model": "tall_grass3" },
+            { "model": "tall_grass4" },
+            { "model": "tall_grass5" },
+            { "model": "tall_grass6" },
+            { "model": "tall_grass7" },
+            { "model": "tall_grass8" },
+            { "model": "tall_grass9" },
+            { "model": "tall_grass10" },
+            { "model": "tall_grass11" },
+            { "model": "tall_grass12" },
+            { "model": "tall_grass13" }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "mossy_cobblestone", "weight": 40 },
+            { "model": "mossy_cobblestone1", "weight": 20 },
+            { "model": "mossy_cobblestone2", "weight": 20 },
+            { "model": "mossy_cobblestone3", "weight": 20 }
+        ]
+    }
+}

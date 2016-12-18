@@ -1,0 +1,17 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "textures": {
+        "particle": "blocks/brewing_stand",
+        "stand": "blocks/brewing_stand",
+        "bottle": "blocks/brewing_stand"
+    },
+    "elements": [
+        {   "from": [ 8, 0, 7.999 ],
+            "to": [ 16, 16, 8.001 ],
+            "faces": {
+                "north": { "uv": [ 0, 0, 8, 16 ], "texture": "#stand" },
+                "south": { "uv": [ 8, 0, 0, 16 ], "texture": "#stand" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "poppy" },
+            { "model": "poppy1" },
+            { "model": "poppy2" },
+            { "model": "poppy3" },
+            { "model": "poppy4" }
+        ]
+    }
+}

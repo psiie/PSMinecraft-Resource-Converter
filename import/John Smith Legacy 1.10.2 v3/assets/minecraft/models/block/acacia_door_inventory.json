@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2016",
+    "parent": "block/door_inventory",
+    "textures": {
+        "lower": "blocks/door_acacia_lower",
+        "upper": "blocks/door_acacia_upper",
+        "edge": "blocks/door_acacia_edge"
+    }
+}

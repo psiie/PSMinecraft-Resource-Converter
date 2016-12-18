@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/flower_pot_cross3",
+    "textures": {
+        "plant": "blocks/sapling_spruce"
+    }
+}

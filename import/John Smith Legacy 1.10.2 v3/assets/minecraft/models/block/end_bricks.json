@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "blocks/end_bricks"
+    }
+}

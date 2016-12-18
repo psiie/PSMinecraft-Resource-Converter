@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/flower_pot_cross",
+    "textures": {
+        "plant": "blocks/deadbush_pot"
+    }
+}

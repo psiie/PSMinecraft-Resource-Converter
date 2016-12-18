@@ -1,0 +1,10 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "blocks/brick_bottom",
+        "top": "blocks/brick_top",
+        "side": "blocks/brick2"
+    }
+}
+

@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "blocks/nether_brick_slab_bottom",
+        "top": "blocks/nether_brick_top1",
+        "side": "blocks/nether_brick_slab_side"
+    }
+}

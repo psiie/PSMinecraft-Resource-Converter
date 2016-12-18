@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "daisy" },
+            { "model": "daisy1" },
+            { "model": "daisy2" },
+            { "model": "daisy3" }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "stonebrick_mossy" },
+            { "model": "stonebrick_mossy1" },
+            { "model": "stonebrick_mossy2" },
+            { "model": "stonebrick_mossy3" },
+            { "model": "stonebrick_mossy4" },
+            { "model": "stonebrick_mossy5" },
+            { "model": "stonebrick_mossy6" },
+            { "model": "stonebrick_mossy7" }
+        ]
+    }
+}

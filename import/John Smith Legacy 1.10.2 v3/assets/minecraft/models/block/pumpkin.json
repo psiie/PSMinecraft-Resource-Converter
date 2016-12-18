@@ -1,0 +1,10 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/orientable",
+    "textures": {
+        "top": "blocks/pumpkin_top",
+        "bottom": "blocks/pumpkin_bottom",
+        "front": "blocks/pumpkin_face_off",
+        "side": "blocks/pumpkin_side"
+    }
+}

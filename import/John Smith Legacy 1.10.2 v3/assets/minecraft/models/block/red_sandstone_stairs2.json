@@ -1,0 +1,9 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "blocks/red_sandstone_bottom",
+        "top": "blocks/red_sandstone_top2",
+        "side": "blocks/red_sandstone_normal2"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/pressure_plate_inventory",
+    "textures": {
+        "texture": "blocks/gold_pressure_plate"
+    }
+}

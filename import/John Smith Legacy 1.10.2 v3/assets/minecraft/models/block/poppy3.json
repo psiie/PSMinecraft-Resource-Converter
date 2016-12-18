@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/cross",
+    "textures": {
+        "cross": "blocks/flower_rose3"
+    }
+}

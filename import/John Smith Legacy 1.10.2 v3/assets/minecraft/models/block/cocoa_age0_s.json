@@ -1,0 +1,29 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/cocoa_stage_0",
+        "cocoa": "blocks/cocoa_stage_0",
+        "cocoa_stem": "blocks/cocoa_stem_stage_0"
+    },
+    "elements": [
+        {   "from": [ 6, 7, 11 ],
+            "to": [ 10, 12, 15 ],
+            "faces": {
+                "down":  { "uv": [  0, 0,  4, 4 ], "texture": "#cocoa" },
+                "up":    { "uv": [  0, 0,  4, 4 ], "texture": "#cocoa" },
+                "north": { "uv": [ 11, 4, 15, 9 ], "texture": "#cocoa" },
+                "south": { "uv": [ 11, 4, 15, 9 ], "texture": "#cocoa" },
+                "west":  { "uv": [ 11, 4, 15, 9 ], "texture": "#cocoa" },
+                "east":  { "uv": [ 11, 4, 15, 9 ], "texture": "#cocoa" }
+            }
+        },
+        {   "from": [ 8, 12, 10 ],
+            "to": [ 8, 16, 16 ],
+            "faces": {
+                "west": { "uv": [ 10, 0, 16, 4 ], "texture": "#cocoa_stem" },
+                "east": { "uv": [ 16, 0, 10, 4 ], "texture": "#cocoa_stem" }
+            }
+        }
+    ]
+}

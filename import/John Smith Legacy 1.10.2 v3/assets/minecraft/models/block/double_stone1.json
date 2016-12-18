@@ -1,0 +1,8 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "blocks/stone_slab_top1",
+        "side": "blocks/stone_slab_side"
+    }
+}

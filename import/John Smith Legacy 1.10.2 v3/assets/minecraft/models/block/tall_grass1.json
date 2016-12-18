@@ -1,0 +1,7 @@
+{
+    "__comment": "JimStoneCraft - 2015",
+    "parent": "block/tinted_cross",
+    "textures": {
+        "cross": "blocks/tallgrass1"
+    }
+}

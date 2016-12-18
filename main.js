@@ -1,34 +1,27 @@
 var fs = require('fs');
 var gm = require('gm').subClass({imageMagick: true});
-// import/default/
-// var insidePath = ''
-// blocks/
-var blockSprites = require('./block-sprites')
+var blockSprites = require('./block-sprites');
+var itemSprites = require('./item-sprites');
+var singleSprites = require('./single-sprites.js');
 var importDirectory = findImportDirectory(); // Declare so find only runs once
-
-// ----------------- Create Output Directory Layout ----------------- //
-
 var layout = [
+  // '/export/armor',
+  // '/export/font',
+  // '/export/item',
+  // '/export/misc',
+  // '/export/mob',
   '/export',
-  '/export/armor',
-  '/export/font',
-  '/export/item',
-  '/export/misc',
-  '/export/mob',
+  '/export/art',
   '/export/textures'
 ]
 
-layout.forEach((i)=>{
-  makeLayout(__dirname + i);
-})
+// ----------------- Directory Functions ----------------- //
 
 function makeLayout(folder) {
   if (!fs.existsSync(folder)) {
     fs.mkdir(folder, ()=>console.log('created dir'));
   }
 }
-
-// ----------------- Helper Functions ----------------- //
 
 function findImportDirectory() {
   console.log('running findImportDirectory :\\');
@@ -63,65 +56,95 @@ function findPNG(shortDirectory) {
 }
 
 
-function saveSheet(spritesheet, filename) {
-  console.log('ran saver function');
-  spritesheet
-    .geometry('16x16+0+0').tile('16x32')
-    .write(filename, (err) => {
-      if (!err) {console.log('written', filename)} 
-      else {console.log(err);}
-    })
+// ----------------- Imagemagick Functions ----------------- //
 
-  if (filename == 'export/terrain.png') {
-    // Only terrain.png has MipMapLevels
-    spritesheet
-      .geometry('8x8+0+0').tile('16x32')
-      .write('export/terrainMipMapLevel2.png', (err) => {
-        if (!err) {console.log('written terrainMipMapLevel2')} 
-      })
-
-    spritesheet
-      .geometry('4x4+0+0').tile('16x32')
-      .write('export/terrainMipMapLevel3.png', (err) => {
-        if (!err) {console.log('written terrainMipMapLevel3')} 
-      })  
-  }
-}
-
-
-// console.log( await findPNG('blocks/gravel.png') );
-// findPNG('blocks/gravel.png').then(i=>console.log(i))
-
-// ----------------- Create Terrain Spritesheet ----------------- //
-
-function montageEach(spritesheet, sprites) {
+function montageEach(spritesheet, sprites, sheetSize, folder, savename) {
   // Recursive function to allow successive Promises to resolve in sequence
   let counter = 0;
   let apply = function(spritesheet, sprites) {
-    findPNG('blocks/' + sprites[counter]).then(dir => {
+    findPNG(folder + sprites[counter]).then(dir => {
       spritesheet.montage(dir);
       if (counter < sprites.length-1) {
         counter += 1;
         apply(spritesheet, sprites);
       } else {
-        saveSheet(spritesheet, 'export/terrain.png');
+        saveSheet(spritesheet, savename, sheetSize);
       }
     });
   }
   apply(spritesheet, sprites);
 }
 
-spritesheet = gm(256,512).background('transparent');
-montageEach(spritesheet, blockSprites)
+function saveSheet(spritesheet, filename, size) {
+  console.log('ran saver function');
+  spritesheet
+    .geometry('16x16+0+0').tile(size)
+    .write('export/' + filename, (err) => {
+      if (!err) {console.log('written', filename)} 
+      else {console.log(err);}
+    })
 
+  if (filename == 'terrain.png') {
+    // Only terrain.png has MipMapLevels
+    spritesheet
+      .geometry('8x8+0+0').tile(size)
+      .write('export/terrainMipMapLevel2.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel2')} 
+      })
 
+    spritesheet
+      .geometry('4x4+0+0').tile(size)
+      .write('export/terrainMipMapLevel3.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel3')} 
+      })  
+  }
+}
 
+// ----------------- MAIN ----------------- //
 
-
-
-
-
-
-// blockSprites.forEach((sprite) => {
-//   findPNG('blocks/' + sprite).then(dir => spritesheet.montage(dir))
+// // Organize an output folder
+// layout.forEach((i)=>{
+//   makeLayout(__dirname + i);
 // })
+
+// // Create item & terrain spritesheet
+// var blockSpritesheet = gm(256,512).bitdepth(8).background('transparent');
+// var itemSpritesheet = gm(256,256).bitdepth(8).background('transparent');
+// montageEach(blockSpritesheet, blockSprites, '16x32', 'blocks/', 'terrain.png');
+// montageEach(itemSpritesheet, itemSprites, '16x16', 'items/', 'items.png');
+
+// Copy Destroy Stages 0-9
+
+function moveAndConvert() {
+  // This function loads each element of singleSprites and converts/moves the file.
+  let counter = 0;
+  let apply = function() {
+    if (counter < singleSprites.length) {
+      findPNG(singleSprites[counter][2]).then(dir => {
+        if (dir == __dirname + '/import/default/404.png') {
+          console.log('missing ', singleSprites[counter[2]], 'skipping...');
+          counter += 1;
+          apply();
+        } else {
+          console.log(dir);
+          gm(dir)
+            .resize(singleSprites[counter][0],singleSprites[counter][1])
+            .bitdepth(8)
+            .background('transparent')
+            .write('export/' + singleSprites[counter][3], err => {
+              if (err) {console.log('error writing on ' + counter + '[3]:', err)
+              } else {
+                console.log('written ' + singleSprites[counter][3]);
+                counter += 1;
+                apply();
+              }
+            })
+        }
+      });
+    }
+  }
+  apply();
+}
+
+moveAndConvert();
+

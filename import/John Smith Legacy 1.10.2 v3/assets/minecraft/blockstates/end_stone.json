@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "end_stone", "weight": 50 },
+            { "model": "end_stone1", "weight": 25 },
+            { "model": "end_stone2", "weight": 25 }
+
+        ]
+    }
+}

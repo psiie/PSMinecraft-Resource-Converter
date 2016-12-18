@@ -1,0 +1,13 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "snowy=false": [
+             { "model": "podzol", "weight": 60 },
+             { "model": "podzol1", "weight": 30 },
+             { "model": "podzol2", "weight": 10 }
+        ],
+        "snowy=true": [
+             { "model": "grass_snowed" }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "__comment": "JimStoneCraft - 2014",
+    "variants": {
+        "normal": [
+            { "model": "houstonia" },
+            { "model": "houstonia1" },
+            { "model": "houstonia2" },
+            { "model": "houstonia3" }
+        ]
+    }
+}
