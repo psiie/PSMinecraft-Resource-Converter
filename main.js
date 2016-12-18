@@ -75,46 +75,6 @@ function montageEach(spritesheet, sprites, sheetSize, folder, savename) {
   apply(spritesheet, sprites);
 }
 
-function saveSheet(spritesheet, filename, size) {
-  console.log('ran saver function');
-  spritesheet
-    .geometry('16x16+0+0').tile(size)
-    .write('export/' + filename, (err) => {
-      if (!err) {console.log('written', filename)} 
-      else {console.log(err);}
-    })
-
-  if (filename == 'terrain.png') {
-    // Only terrain.png has MipMapLevels
-    spritesheet
-      .geometry('8x8+0+0').tile(size)
-      .write('export/terrainMipMapLevel2.png', (err) => {
-        if (!err) {console.log('written terrainMipMapLevel2')} 
-      })
-
-    spritesheet
-      .geometry('4x4+0+0').tile(size)
-      .write('export/terrainMipMapLevel3.png', (err) => {
-        if (!err) {console.log('written terrainMipMapLevel3')} 
-      })  
-  }
-}
-
-// ----------------- MAIN ----------------- //
-
-// // Organize an output folder
-// layout.forEach((i)=>{
-//   makeLayout(__dirname + i);
-// })
-
-// // Create item & terrain spritesheet
-// var blockSpritesheet = gm(256,512).bitdepth(8).background('transparent');
-// var itemSpritesheet = gm(256,256).bitdepth(8).background('transparent');
-// montageEach(blockSpritesheet, blockSprites, '16x32', 'blocks/', 'terrain.png');
-// montageEach(itemSpritesheet, itemSprites, '16x16', 'items/', 'items.png');
-
-// Copy Destroy Stages 0-9
-
 function moveAndConvert() {
   // This function loads each element of singleSprites and converts/moves the file.
   let counter = 0;
@@ -146,5 +106,44 @@ function moveAndConvert() {
   apply();
 }
 
+function saveSheet(spritesheet, filename, size) {
+  console.log('ran saver function');
+  spritesheet
+    .geometry('16x16+0+0').tile(size)
+    .write('export/' + filename, (err) => {
+      if (!err) {console.log('written', filename)} 
+      else {console.log(err);}
+    })
+
+  if (filename == 'terrain.png') {
+    // Only terrain.png has MipMapLevels
+    spritesheet
+      .geometry('8x8+0+0').tile(size)
+      .write('export/terrainMipMapLevel2.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel2')} 
+      })
+
+    spritesheet
+      .geometry('4x4+0+0').tile(size)
+      .write('export/terrainMipMapLevel3.png', (err) => {
+        if (!err) {console.log('written terrainMipMapLevel3')} 
+      })  
+  }
+}
+
+// ----------------- MAIN ----------------- //
+
+// Organize an output folder
+layout.forEach((i)=>{
+  makeLayout(__dirname + i);
+})
+
+// Create item & terrain spritesheet
+var blockSpritesheet = gm(256,512).bitdepth(8).background('transparent');
+var itemSpritesheet = gm(256,256).bitdepth(8).background('transparent');
+montageEach(blockSpritesheet, blockSprites, '16x32', 'blocks/', 'terrain.png');
+montageEach(itemSpritesheet, itemSprites, '16x16', 'items/', 'items.png');
+
+// Copy Destroy Stages 0-9
 moveAndConvert();
 
