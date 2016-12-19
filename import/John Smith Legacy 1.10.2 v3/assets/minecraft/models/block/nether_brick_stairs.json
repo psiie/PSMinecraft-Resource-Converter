@@ -1,9 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "blocks/nether_brick_stairs_bottom",
-        "top": "blocks/nether_brick_stairs",
-        "side": "blocks/nether_brick_stairs_side"
-    }
-}

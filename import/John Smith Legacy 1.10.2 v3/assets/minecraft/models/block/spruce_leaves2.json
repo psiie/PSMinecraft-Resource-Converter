@@ -1,7 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/leaves",
-    "textures": {
-        "all": "blocks/leaves_spruce2"
-    }
-}

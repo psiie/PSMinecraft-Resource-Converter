@@ -1,8 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "blocks/red_sandstone_top1",
-        "side": "blocks/red_sandstone_carved1"
-    }
-}

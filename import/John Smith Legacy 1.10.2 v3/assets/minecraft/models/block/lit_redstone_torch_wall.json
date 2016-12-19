@@ -1,8 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2016",
-    "parent": "block/redstone_torch_wall",
-    "textures": {
-        "redstone_torch": "blocks/redstone_torch_on",
-        "particle": "blocks/redstone_torch_particle"
-    }
-}

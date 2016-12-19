@@ -202,7 +202,7 @@ module.exports = [
   "wooden_armorstand.png",
   "fireworks.png",
   "fireworks_charge.png",
-  "apple_golden.png",
+  "spawn_egg_overlay.png",
   "quartz.png",
   "map_empty.png",
   "item_frame.png",

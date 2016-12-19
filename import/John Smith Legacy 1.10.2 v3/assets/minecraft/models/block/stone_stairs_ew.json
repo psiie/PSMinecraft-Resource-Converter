@@ -1,9 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "blocks/stone_stairs_bottom2",
-        "top": "blocks/stone_stairs_top2",
-        "side": "blocks/stone_stairs_side"
-    }
-}

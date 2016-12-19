@@ -1,9 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "blocks/planks_oak2",
-        "top": "blocks/planks_oak2",
-        "side": "blocks/planks_oak2"
-    }
-}

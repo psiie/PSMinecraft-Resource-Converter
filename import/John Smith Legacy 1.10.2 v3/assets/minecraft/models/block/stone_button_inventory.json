@@ -1,7 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/button_inventory",
-    "textures": {
-        "texture": "blocks/button_stone"
-    }
-}

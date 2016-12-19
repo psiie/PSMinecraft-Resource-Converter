@@ -1,9 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "bottom": "blocks/stonebrick_cracked_top4",
-        "top": "blocks/stonebrick_cracked_top4",
-        "side": "blocks/stonebrick_cracked4"
-    }
-}

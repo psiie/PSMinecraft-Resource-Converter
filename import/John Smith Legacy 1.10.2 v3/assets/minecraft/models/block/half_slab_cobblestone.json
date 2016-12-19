@@ -1,9 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/half_slab",
-    "textures": {
-        "bottom": "blocks/cobblestone_bottom",
-        "top": "blocks/cobblestone_top",
-        "side": "blocks/cobblestone"
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "__comment": "JimStoneCraft - 2014",
-    "parent": "block/pressure_plate_down",
-    "textures": {
-        "texture": "blocks/wooden_pressure_plate"
-    }
-}
