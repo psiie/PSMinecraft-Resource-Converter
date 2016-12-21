@@ -29,6 +29,7 @@ Merge the *contents* of export with `ux0:app/PCSE00491/Common/res/TitleUpdate/re
 ![example of merging files](https://puu.sh/sU7D7/1387e33de6.png)
 
 ####Todo
+* Compile for easy execution
 * Entities
 * GUI
 * item fixes
