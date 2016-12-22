@@ -8,10 +8,29 @@
     "gm": "^1.23.0",
     "spritesheet-templates": "^10.1.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nexe": "^1.1.2",
+    "spawn-sync": "^1.0.15",
+    "try-thread-sleep": "^1.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "nexe": {
+    "input": "./bin/nexe",
+    "output": "nexe^$",
+    "temp": "src",
+    "browserify": {
+      "requires": [],
+      "excludes": [],
+      "paths": []
+    },
+    "runtime": {
+      "framework": "node",
+      "version": "6.4.0",
+      "ignoreFlags": true
+    }
+  }
 }

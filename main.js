@@ -27,7 +27,13 @@ function findImportDirectory() {
   console.log('running findImportDirectory :\\');
   // Returns a promise with the most likely folder to be importing
   var dir = new Promise((resolve, reject) => {
-    fs.readdir(__dirname + '/import/', (err, list) => resolve(list))
+    fs.readdir('./import/', (err, list) => {
+      if (err) {
+        console.log('error: ', err);
+        reject(err)
+      }
+      else {resolve(list)}
+    })
   });
   return dir.then(list => {
     var mostLikely = 'default';
@@ -41,8 +47,8 @@ function findImportDirectory() {
 function findPNG(shortDirectory) {
   // Returns either the imported texturepack path or the default path
   return importDirectory.then(dir => {
-    let userDir = __dirname + '/import/' + dir + '/assets/minecraft/textures/' + shortDirectory;
-    let defaultDir = __dirname + '/import/default/assets/minecraft/textures/' + shortDirectory;
+    let userDir = './import/' + dir + '/assets/minecraft/textures/' + shortDirectory;
+    let defaultDir = './import/default/assets/minecraft/textures/' + shortDirectory;
     // if (false) {
     if (fs.existsSync(userDir)) {
       return userDir;
@@ -50,7 +56,7 @@ function findPNG(shortDirectory) {
       return defaultDir;
     } else {
       console.log("!!!ERROR!!! Report this filename: \"", shortDirectory, "\"");
-      return __dirname + '/import/default/404.png';
+      return './import/default/404.png';
     }
   })
 }
@@ -81,7 +87,7 @@ function moveAndConvert() {
   let apply = function() {
     if (counter < singleSprites.length) {
       findPNG(singleSprites[counter][2]).then(dir => {
-        if (dir == __dirname + '/import/default/404.png') {
+        if (dir == './import/default/404.png') {
           console.log('missing ', singleSprites[counter[2]], 'skipping...');
           counter += 1;
           apply();
@@ -135,7 +141,7 @@ function saveSheet(spritesheet, filename, size) {
 
 // Organize an output folder
 layout.forEach((i)=>{
-  makeLayout(__dirname + i);
+  makeLayout(i);
 })
 
 // Create item & terrain spritesheet

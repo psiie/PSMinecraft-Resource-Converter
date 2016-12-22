@@ -1,0 +1,1 @@
+nexe -i main.js -o psmrc.bin
