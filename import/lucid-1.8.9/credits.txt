@@ -1,0 +1,92 @@
+Credits to the people who have helped with this resource pack
+after July 4th, 2013. In alphabetical order, we have:
+
+Bancey_Boy
+----------
+Added Eye Of Ender block texture for when it's in an Ender Portal Frame
+
+clueless222
+-----------
+Added Dropper face
+Added Dispenser vertical face
+Added Dropper vertical face
+Added Hopper texture
+Added Redstone Block texture
+Added Activator Rail texture
+Added Powered Activator Rail texture
+Added Powered Detector Rail texture
+Added Cauldron texture
+Added new panorama screenshots for the title screen
+Added Quartz Block texture
+Added Daylight Detector texture
+Added Quartz Pillar texture
+Added Chiseled Quartz texture
+Modified Furnace Top texture
+Added Coal Block texture
+Added Hay Bale block texture concept
+Helped with Stained Glass textures
+Added Nether Portal block texture
+Updated panorama title screen to be pixel perfect at the seams
+Added second slot for 1.8 enchanting table
+Added Granite block texture
+Added Polished Granite block texture
+Added Inverted Daylight Sensor block texture
+Added Polished Andesite block texture
+
+SnoFox
+------
+Fixed 1.5 conversion
+Added Nether quartz ore
+Converted to 1.6 resource pack
+Various minor fixes and tweaks
+Added Anvil UI
+Added Beacon UI
+Added Brewing Stand UI
+Added Horse Inventory UI
+Added Horse HUD
+Modified Player HUD improvements/updates
+Modified Donkey texture to be Lucid
+Finished Hay Bale block texture
+Modified Mule texture to fit Lucid
+Added Podzol block texture
+Added Stained Glass block textures
+Added Hardened Clay block texture
+Added Stained Clay block textures
+Added Red Sand block texture
+Modified Ice block texture
+Added Packed Ice block texture
+Added Acacia Wood block texture
+Added Dark Oak Wood block texture
+Added Acacia Planks block texture
+Added Dark Oak Planks block texture
+Added Acacia Leaves block texture
+Modified the vanilla double fern and double grass textures to fit Lucid
+Added and animated the lava texture from old versions of Lucid
+Added the static water texture from old versions of Lucid
+Changed Lapis Ore block texture
+Added Iron Trapdoor block texture
+Added Wet Sponge block texture
+Modified Polished Granite block texture
+Modified Lapis Lazuli block texture
+SnoFox got drunk and decided to stop texturing and closed all related files
+Added the language selection button on the main menu
+Added Lucid resource pack credits to main Minecraft credits
+Modified the tool slot for the 1.8 enchanting table
+Added the achivements UI
+Added the spectator HUD
+Added Boat texture
+Changed Red Sand block texture
+Added Red Sandstone texture
+Added Carved Red Sandstone texture
+Added Smooth Red Sandstone texture
+Added Spruce Door texture
+
+
+Modded blocks
+-------------
+SnoFox
+------
+Added Copper Ore texture for IndustrialCraft 2
+Added Tin Ore texture for IndustrialCraft 2
+Added Lead Ore texture for IndustrialCraft 2
+Added Uranium Ore texture for IndustrialCraft 2
