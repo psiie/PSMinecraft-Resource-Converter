@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "tileDimensions": [256,256],
+      "filenameInput": "painting/paintings_kristoffer_zetterstrand.png",
+      "filenameOutput": "art/kz.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_0.png",
+      "filenameOutput": "textures/destroy_stage_0.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_1.png",
+      "filenameOutput": "textures/destroy_stage_1.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_2.png",
+      "filenameOutput": "textures/destroy_stage_2.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_3.png",
+      "filenameOutput": "textures/destroy_stage_3.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_4.png",
+      "filenameOutput": "textures/destroy_stage_4.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_5.png",
+      "filenameOutput": "textures/destroy_stage_5.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_6.png",
+      "filenameOutput": "textures/destroy_stage_6.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_7.png",
+      "filenameOutput": "textures/destroy_stage_7.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_8.png",
+      "filenameOutput": "textures/destroy_stage_8.png"
+    },
+    {
+      "tileDimensions": [16,16],
+      "filenameInput": "blocks/destroy_stage_9.png",
+      "filenameOutput": "textures/destroy_stage_9.png"
+    }
+  ]
+}

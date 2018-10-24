@@ -4,16 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "fs": "0.0.1-security",
     "fs-extra": "^7.0.0",
     "gm": "^1.23.0",
-    "path": "^0.12.7",
-    "spritesheet-templates": "^10.1.4"
-  },
-  "devDependencies": {
-    "nexe": "^1.1.2",
-    "spawn-sync": "^1.0.15",
-    "try-thread-sleep": "^1.0.0"
+    "path": "^0.12.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
