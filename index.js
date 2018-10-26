@@ -7,6 +7,9 @@ const fs = require('fs-extra');
 
 const { onFileReceived } = require('./convert');
 
+// cleanup on boot
+fs.removeSync(path.join(__dirname, 'tmp'));
+
 app.use(cookieParser());
 app.use((req, res, next) => {
   const cookie = req.cookies ? req.cookies.sessionId : undefined;
@@ -34,12 +37,25 @@ app.get('/', (req, res) => {
 
 app.get('/download/:sessionId', (req, res) => {
   const { sessionId } = req.params;
-  if (!sessionId) { res.send(301).send('No download id specified'); return; }
-  // psmrc(res, req.cookies.sessionId);
-  // res.status(200).sendFile(path.join(__dirname, 'tmp', sessionId, 'converted.zip'));
-  res.status(200).download(path.join(__dirname, 'tmp', sessionId, 'converted.zip'), 'texturepack.zip', err => {
-    if (err) console.log('error sending user the download');
-    else console.log('success. send file completed.');
+  if (!sessionId) {
+    res.send(301).send('No download id specified');
+    return;
+  }
+
+  const filePath = path.join(__dirname, 'tmp', sessionId, 'converted.zip');
+  
+  if (!fs.existsSync(filePath)) {
+    res.status(302).send('Download file does not exist. Are you accessing your own convertion?');
+    return;
+  }
+
+  res.download(filePath, 'texturepack.zip', err => {
+    if (err) {
+      console.log('error sending user the download');
+      if (!res.headersSent) res.status(502).send('Server error in sending file to client', err);
+    }
+    
+    fs.remove(path.join(__dirname, 'tmp', sessionId));
   });
 });
 
