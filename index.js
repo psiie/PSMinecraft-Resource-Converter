@@ -5,7 +5,7 @@ const formidable = require('formidable');
 const cookieParser = require('cookie-parser');
 const fs = require('fs-extra');
 
-const { onFileReceived } = require('./convert');
+const Converter = require('./app/converter');
 
 // todo: ensure connection closes on improper use
 
@@ -40,13 +40,13 @@ app.get('/', (req, res) => {
 app.get('/download/:sessionId', (req, res) => {
   const { sessionId } = req.params;
   if (!sessionId) {
-    res.send(301).send('No download id specified');
+    res.send(400).send('No download id specified');
     return;
   }
 
   const filePath = path.join(__dirname, 'tmp', sessionId, 'converted.zip');  
   if (!fs.existsSync(filePath)) {
-    res.status(302).send('Download file does not exist. Are you accessing your own convertion?');
+    res.status(410).send('Download file does not exist. Are you accessing your own conversion?');
     return;
   }
 
@@ -54,7 +54,7 @@ app.get('/download/:sessionId', (req, res) => {
   res.download(filePath, 'texturepack.zip', err => {
     if (err) {
       console.log('error sending user the download');
-      if (!res.headersSent) res.status(502).send('Server error in sending file to client', err);
+      if (!res.headersSent) res.status(500).send('Server error in sending file to client', err);
     }
 
     fs.remove(path.join(__dirname, 'tmp', sessionId));
@@ -66,17 +66,26 @@ app.get('/download/:sessionId', (req, res) => {
 app.post('/upload', (req, res) => {
   console.log('Express: UPLOAD COOKIE. sessionId cookie:', req.cookies.sessionId);
   const { sessionId } = req.cookies;
-  if (!sessionId) res.status(403).end('No cookie sent with request. Cannot process.');
+  if (!sessionId) res.status(400).end('No cookie sent with request. Cannot process.');
 
   const uploadDir = path.join(__dirname, 'tmp', sessionId);
   const form = new formidable.IncomingForm(); // create an incoming form object
+  let converter = new Converter(sessionId, res);
 
   fs.mkdirpSync(uploadDir);
   form.multiples = true; // specify that we want to allow the user to upload multiple files in a single request
   form.uploadDir = uploadDir; // store all uploads in the /uploads directory
 
-  form.on('file', (field, file) => onFileReceived(file, uploadDir, sessionId, res));
-  form.on('error', error => res.status(500).end(JSON.stringify(error)));
+  form
+    .on('error', error => {
+      res.status(415).end(JSON.stringify(error));
+      converter = null; // stops 'file' logic from continuing.
+    })
+    .on('file', (field, file) => {
+      if (!converter) return;
+      converter.unzip(file, uploadDir);
+    });
+
   form.parse(req); // parse the incoming request containing the form data
 });
 

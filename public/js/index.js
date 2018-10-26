@@ -46,7 +46,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     $('.upload-btn').on('click', function() {
       $('#upload-input').click();
-      $('#upload-input').prop("disabled",true);
+      $('.upload-btn').prop("disabled",true);
       $('.progress-bar').text('0%');
       $('.progress-bar').width('0%');
     });
