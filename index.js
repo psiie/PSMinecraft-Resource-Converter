@@ -7,6 +7,8 @@ const fs = require('fs-extra');
 
 const { onFileReceived } = require('./convert');
 
+// todo: ensure connection closes on improper use
+
 // cleanup on boot
 fs.removeSync(path.join(__dirname, 'tmp'));
 
@@ -15,7 +17,7 @@ app.use((req, res, next) => {
   const cookie = req.cookies ? req.cookies.sessionId : undefined;
   if (!cookie) {
     let randomNumber = Math.random().toString();
-    randomNumber=randomNumber.substring(2,randomNumber.length);
+    randomNumber = randomNumber.substring(2,randomNumber.length);
     res.cookie('sessionId',randomNumber, { maxAge: 900000, httpOnly: true });
     req.cookies.sessionId = randomNumber;
     console.log('Express: cookie created successfully', randomNumber);
@@ -42,19 +44,19 @@ app.get('/download/:sessionId', (req, res) => {
     return;
   }
 
-  const filePath = path.join(__dirname, 'tmp', sessionId, 'converted.zip');
-  
+  const filePath = path.join(__dirname, 'tmp', sessionId, 'converted.zip');  
   if (!fs.existsSync(filePath)) {
     res.status(302).send('Download file does not exist. Are you accessing your own convertion?');
     return;
   }
 
+  res.clearCookie('sessionId');
   res.download(filePath, 'texturepack.zip', err => {
     if (err) {
       console.log('error sending user the download');
       if (!res.headersSent) res.status(502).send('Server error in sending file to client', err);
     }
-    
+
     fs.remove(path.join(__dirname, 'tmp', sessionId));
   });
 });
@@ -75,11 +77,7 @@ app.post('/upload', (req, res) => {
 
   form.on('file', (field, file) => onFileReceived(file, uploadDir, sessionId, res));
   form.on('error', error => res.status(500).end(JSON.stringify(error)));
-  // form.on('end', () => res.status(200).end('success'));
   form.parse(req); // parse the incoming request containing the form data
-
-  // console.log('Attempting cleanup');
-  // cleanup.cleanByExpiration();
 });
 
 // -------------------------------------------------------------------------- //

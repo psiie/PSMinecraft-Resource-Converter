@@ -2,47 +2,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const gm = require('gm').subClass({imageMagick: true});
 const async = require('async');
-// const JSZip = require("jszip");
-
-// const zipFile = fs.readFileSync(path.join(__dirname, 'lucid-1.8.9.zip'));
-// JSZip.loadAsync(zipFile).then(zip => {
-//   console.log(Object.keys(zip.files))
-// });
-// class 
-
-// Returns the directory that the user added into imports/
-// class UserDirectory {
-//   constructor(dirPath) {
-//     this.found;
-//     this.dirPath = dirPath || __dirname;
-//     this.folders = fs.readdirSync(path.join(this.dirPath, 'import/')) || [];
-//     this.folders.forEach(folder => { // Cycle through each folder. If not hidden or 'default'
-//       if (folder !== 'default' && folder[0] !== '.') this.found = folder;
-//     });
-//   }
-
-//   get path() {
-//     if (!this.found) return null;
-//     return path.join(this.dirPath, this.found);
-//   }
-// }
-
-// class ZipFile {
-//   constructor() {
-//     this.zip = new Promise();
-//   }
-
-//   open(path) {
-//     const buffer = fs.readFileSync(path);
-//     this.zip = JSZip.loadAsync(buffer);
-//   }
-
-//   file(path) {
-//     return new Promise((resolve, reject) => {
-//       this.zip.files
-//     });
-//   }
-// }
 
 // Returns the path to the png
 class ImageFile {
@@ -66,7 +25,7 @@ class ImageFile {
 }
 
 class Sprites {
-  constructor(params) {
+  constructor() {
     this.files = [];
     this.uuid = '';
     this.file404 = new ImageFile().path404;
@@ -78,7 +37,7 @@ class Sprites {
     if (!fs.pathExistsSync(folderPath)) fs.mkdirpSync(folderPath);
     gmSprite.write(filePath, error => {
       if (error) console.log(`Sprites: error writing on ${filename}, ${error}`);
-      else console.log('Sprites2: written' + filename);
+      else console.log('Sprites: written' + filename);
       
       if (callback) callback(null);
     });
